@@ -7,14 +7,14 @@ int loShuTest(int grid[3][3])
 {
 	int successTracker = 0;
 
-	for (int i = 0; 0 < 3; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		if ((grid[i][0] + grid[i][1] + grid[i][2]) == 15)
 		{
 			successTracker++;
 		}
 	}
-	for (int i = 0; 0 < 3; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		if ((grid[0][i] + grid[1][i] + grid[2][i]) == 15)
 		{
