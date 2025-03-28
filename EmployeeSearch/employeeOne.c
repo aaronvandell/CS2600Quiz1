@@ -18,7 +18,7 @@ PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char *
 	const PtrToConstEmployee endPtr = ptr + tableSize;
 	for (; ptr < endPtr; ptr++)
 	{
-		if (strcmp(ptr->name, targetName))
+		if (strcmp(ptr->name, targetName) == 0)
 		{
 			return (PtrToEmployee) ptr;
 		}
@@ -31,7 +31,7 @@ PtrToEmployee searchEmployeeByPhoneNumber(PtrToConstEmployee ptr, int tableSize,
 	const PtrToConstEmployee endPtr = ptr + tableSize;
 	for (; ptr < endPtr; ptr++)
 	{
-		if (strcmp(ptr->name, targetPhoneNumber))
+		if (strcmp(ptr->phone, targetPhoneNumber) == 0)
 		{
 			return (PtrToEmployee) ptr;
 		}
